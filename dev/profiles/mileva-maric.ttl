@@ -1,0 +1,28 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+
+<>
+    a foaf:PersonalProfileDocument;
+    foaf:maker <http://localhost:8000/mileva-maric/profile/card#me>;
+    foaf:primaryTopic <http://localhost:8000/mileva-maric/profile/card#me>.
+
+<http://localhost:8000/mileva-maric/profile/card#me>
+    solid:oidcIssuer <http://localhost:8000/>;
+    a foaf:Person;
+    foaf:name "Mileva Marić";
+    foaf:gender "female";
+    foaf:birthDate "1875-12-19";
+    foaf:knows <http://localhost:8000/albert-einstein/profile/card#me>,
+              <http://localhost:8000/max-planck/profile/card#me>,
+              <http://localhost:8000/niels-bohr/profile/card#me>,
+              <http://localhost:8000/erwin-schrodinger/profile/card#me>,
+              <http://localhost:8000/hendrik-lorentz/profile/card#me>;
+    vcard:tel <tel:+1122334455>;
+    vcard:address [
+        a vcard:Address;
+        vcard:street-address "456 Physics Street";
+        vcard:locality "Zurich";
+        vcard:region "Zurich";
+        vcard:country "Switzerland"
+    ].

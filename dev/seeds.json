@@ -1,0 +1,93 @@
+[
+    {
+        "email": "albert.einstein@example.org",
+        "password": "azerty",
+        "pods":[
+            {
+                "name": "albert.einstein"
+            }
+        ]
+    },
+    {
+        "email": "marie.curie@example.org",
+        "password": "azerty",
+        "pods":[
+            {
+                "name": "marie.curie"
+            }
+        ]
+    },
+    {
+        "email": "max.planck@example.org",
+        "password": "azerty",
+        "pods":[
+            {
+                "name": "max.planck"
+            }
+        ]
+    },
+    {
+        "email": "niels.bohr@example.org",
+        "password": "azerty",
+        "pods":[
+            {
+                "name": "niels.bohr"
+            }
+        ]
+    },
+    {
+        "email": "erwin.schrodinger@example.org",
+        "password": "azerty",
+        "pods":[
+            {
+                "name": "erwin.schrodinger"
+            }
+        ]
+    },
+    {
+        "email": "pierre.curie@example.org",
+        "password": "azerty",
+        "pods":[
+            {
+                "name": "pierre.curie"
+            }
+        ]
+    },
+    {
+        "email": "henri.becquerel@example.org",
+        "password": "azerty",
+        "pods":[
+            {
+                "name": "henri.becquerel"
+            }
+        ]
+    },
+    {
+        "email": "mileva.maric@example.org",
+        "password": "azerty",
+        "pods":[
+            {
+                "name": "mileva.maric"
+            }
+        ]
+    },
+    {
+        "email": "claude.debussy@example.org",
+        "password": "azerty",
+        "pods":[
+            {
+                "name": "claude.debussy"
+            }
+        ]
+    }
+    ,
+    {
+        "email": "irene.joliot.curie@example.org",
+        "password": "azerty",
+        "pods":[
+            {
+                "name": "irene.joliot.curie"
+            }
+        ]
+    }
+]

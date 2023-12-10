@@ -1,0 +1,28 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+
+<>
+    a foaf:PersonalProfileDocument;
+    foaf:maker <http://localhost:8000/irene-joliot-curie/profile/card#me>;
+    foaf:primaryTopic <http://localhost:8000/irene-joliot-curie/profile/card#me>.
+
+<http://localhost:8000/irene-joliot-curie/profile/card#me>
+    a foaf:Person;
+    solid:oidcIssuer <http://localhost:8000/>;
+    foaf:name "Irène Joliot-Curie";
+    foaf:gender "female";
+    foaf:birthDate "1897-09-12";
+    foaf:knows <http://localhost:8000/marie-curie/profile/card#me>,
+              <http://localhost:8000/pierre-curie/profile/card#me>,
+              <http://localhost:8000/henri-becquerel/profile/card#me>,
+              <http://localhost:8000/paul-langevin/profile/card#me>,
+              <http://localhost:8000/claude-debussy/profile/card#me>;
+    vcard:tel <tel:+9988776655>;
+    vcard:address [
+        a vcard:Address;
+        vcard:street-address "456 Radioactivity Street";
+        vcard:locality "Paris";
+        vcard:region "Île-de-France";
+        vcard:country "France"
+    ].

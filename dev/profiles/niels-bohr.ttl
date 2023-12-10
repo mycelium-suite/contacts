@@ -1,0 +1,28 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+
+<>
+    a foaf:PersonalProfileDocument;
+    foaf:maker <http://localhost:8000/niels-bohr/profile/card#me>;
+    foaf:primaryTopic <http://localhost:8000/niels-bohr/profile/card#me>.
+
+<http://localhost:8000/niels-bohr/profile/card#me>
+    solid:oidcIssuer <http://localhost:8000/>;
+    a foaf:Person;
+    foaf:name "Niels Bohr";
+    foaf:gender "male";
+    foaf:birthDate "1885-10-07";
+    foaf:knows <http://localhost:8000/albert-einstein/profile/card#me>,
+              <http://localhost:8000/max-planck/profile/card#me>,
+              <http://localhost:8000/erwin-schrodinger/profile/card#me>,
+              <http://localhost:8000/mileva-maric/profile/card#me>,
+              <http://localhost:8000/hendrik-lorentz/profile/card#me>;
+    vcard:tel <tel:+123456789>;
+    vcard:address [
+        a vcard:Address;
+        vcard:street-address "567 Quantum Street";
+        vcard:locality "Copenhagen";
+        vcard:region "Capital Region";
+        vcard:country "Denmark"
+    ].

@@ -1,0 +1,28 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+
+<>
+    a foaf:PersonalProfileDocument;
+    foaf:maker <http://localhost:8000/erwin-schrodinger/profile/card#me>;
+    foaf:primaryTopic <http://localhost:8000/erwin-schrodinger/profile/card#me>.
+
+<http://localhost:8000/erwin-schrodinger/profile/card#me>
+    solid:oidcIssuer <http://localhost:8000/>;
+    a foaf:Person;
+    foaf:name "Erwin Schrödinger";
+    foaf:gender "male";
+    foaf:birthDate "1887-08-12";
+    foaf:knows <http://localhost:8000/albert-einstein/profile/card#me>,
+              <http://localhost:8000/max-planck/profile/card#me>,
+              <http://localhost:8000/niels-bohr/profile/card#me>,
+              <http://localhost:8000/mileva-maric/profile/card#me>,
+              <http://localhost:8000/hendrik-lorentz/profile/card#me>;
+    vcard:tel <tel:+135792468>;
+    vcard:address [
+        a vcard:Address;
+        vcard:street-address "234 Wave Function Road";
+        vcard:locality "Vienna";
+        vcard:region "Vienna";
+        vcard:country "Austria"
+    ].

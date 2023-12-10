@@ -1,0 +1,13 @@
+services:
+  contacts:
+    image: solidproject/community-server:7.0.2
+    container_name: mycelium_contacts
+    environment:
+      - CSS_SEED_CONFIG=/data/seeds.json
+      - CSS_BASE_URL=http://localhost:8000
+      - CSS_PORT=8000
+    volumes:
+      - ./dev/pods/:/data
+      - ./dev/seeds.json:/data/seeds.json
+    ports:
+      - 8000:8000 
